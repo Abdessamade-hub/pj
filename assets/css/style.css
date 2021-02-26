@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins' , sans-serif ;
+    color: #222;
+
+
+}
+
+.navbar {
+    padding: .8rem; 
+}
+.navbar-nav li {
+    padding-right: 20px;
+}
+.navbar-link {
+    font-size: 1.1rem !important;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption {
+    position : absolute;
+    top: 50%;
+    transform: translateZ(-50%);
+}
+.carousel-caption h1{
+    font-size: 500%;
+}
+.carousel-caption h3{
+    font-size: 200%;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.padding {
+    padding-bottom: 5rem;;
+}
+.about h2{
+    padding: 10rem 0 3rem;
+}
+
+.about p{
+    width: 75%;
+}
+.about img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-top: 0rem;
+}
+.footer hr {
+    border : 2px solid green;
+    width: 37px;
+    margin: 2rem 0;
+    border-radius: 20%;
+}
+
+.activity > p{
+    margin-bottom: 2rem;
+}
+
+.activity .icon-dotted1 {
+    border: 1px solid green;
+    color: green;
+    border-radius: 50%;
+    width: 5%;
+    padding: .4rem 0 .4rem;
+    margin: auto;
+    
+}
+
+
+.activity .icon-dotted2 {
+    border: 1px solid #222;
+    color: #222;
+    border-radius: 50%;
+    width: 5%;
+    padding: .4rem 0 .4rem;
+    margin: auto;
+    
+}
+
+.img {
+    -webkit-transform: all 0.5s ease;
+}
+.realisation img:hover {
+    transform: scale(1.5);
+}
+.thumbnail {
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+/*-- Media queries --*/
+@media (max-width: 992){
+
+}
+@media (max-width: 768){
+    
+}
+@media (max-width: 576){
+    
+}
+
+
+/*-- Firefox Bug fix --*/
+.carousel-item{
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+/* --Fixed background Image --*/
+figure{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+
+.fixed-wrap{
+    clip : rect(0,auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed{
+    background-image: url('../img/back2.jpg');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+
+
+
+/* 
+xs => less than 576
+
+sm => min-width: 576
+
+md => min-width: 768
+
+lg => min-width: 992
+
+xl => min-width: 1200
+
+
+*/
