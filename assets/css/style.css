@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
 html, body {
     height: 100%;
     width: 100%;
     color: #222;
-
-
 }
 
 /* .navbar {
@@ -35,11 +34,7 @@ html, body {
 }
 
 #navbarSupportedContent > ul > li:nth-child(n) > a:hover {
-    font-size: 16px;
-    font-family: "Montserrat";
     color: rgb( 90, 191, 40 );
-    text-transform: uppercase;
-    text-align: left;
    
 }
 nav > .navbar-brand  {
@@ -49,17 +44,27 @@ nav > .navbar-brand  {
     text-align: center;
 
 }
-.social .fa-facebook-f, .social .fa-twitter, .social .fa-google-plus-g{
+.social .facebook, .social .twitter, .social .googleplus{
     color:rgb( 150, 150, 150 );
     margin-right: 1rem;
     border-width: 3px;
     border-color: rgb( 230, 230, 230 );
     border-style: solid;
     border-radius: 50%;
-
+    width: 50px;
+    height: 50px;
+    top:50%;
+    left: 50%;
+    transform: translate((50%, -50%));
+    display: inline-block;
+    
+}
+.social .facebook:hover, .social .twitter:hover, .social .googleplus:hover{
+    color:#FFFF;
+    border-color: rgb( 90, 191, 40 );
+    background-color:  rgb( 90, 191, 40 );
 }
 
-  
   /* .Aux_jardins_du_lys {
     font-size: 30px;
     font-family: "Lobster";
@@ -71,20 +76,23 @@ nav > .navbar-brand  {
     z-index: 13;
   }
    */
-  
-.carousel-inner img {
-    width: 100%;
+   
+.carousel-inner{
     height: 100%;
+}
+.carousel-inner img {
+    max-width: 100%;
+    height: auto; 
 }
 .carousel-caption {
     position : absolute;
-    top: 50%;
+    top: 30%;
     transform: translateZ(-50%);
 }
 .carousel-caption h1{
     font-size: 500%;
-        font-family: "Lobster";
-        color: rgb( 255, 255, 255 );
+    font-family: "Lobster";
+    color: rgb( 255, 255, 255 );
 }
 .carousel-caption h3{
     font-size: 200%;
@@ -95,7 +103,7 @@ nav > .navbar-brand  {
 }
 
 .about h2{
-    padding: 10rem 0 3rem;
+    padding: 5rem 0 3rem;
 }
 
 .about h2 {
@@ -116,10 +124,11 @@ nav > .navbar-brand  {
     margin-top: 0rem;
 }
 .footer hr {
-    border : 3px solid rgb( 90, 191, 40 );
+    border-bottom : 3px solid rgb( 90, 191, 40 );
     width: 35px;
     margin: 0;
     border-radius: 20%;
+    margin-bottom: 2rem;
 }
 
 .activity h2 {
@@ -131,27 +140,28 @@ nav > .navbar-brand  {
 .activity > p{
     margin-bottom: 2rem;
 }
-
-.activity .icon-dotted1 {
-    border: 1px solid rgb( 90, 191, 40 );
-    color: rgb( 90, 191, 40 );
-    border-radius: 50%;
-    width: 5%;
-    padding: .4rem 0 .4rem;
-    margin: auto;
+.activity .activity-body:hover {
+    color:rgb( 90, 191, 40 );
+    cursor: pointer
 }
 
 
-.activity .icon-dotted2 {
-    border: 1px solid #222;
-    color: #222;
+.activity .dots-icon {
+    position: relative;
+    border: 3px solid;
     border-radius: 50%;
-    width: 5%;
-    padding: .4rem 0 .4rem;
-    margin: auto;
-    
+    width: 50px;
+    height: 50px;
+    margin:auto
 }
 
+.activity .dots-icon:after {
+    content: '•••';
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .gallery-container h2 {
     font-size: 70px;
@@ -168,6 +178,8 @@ nav > .navbar-brand  {
 
 .tz-gallery .lightbox img {
     width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 .tz-gallery .lightbox:before {
@@ -179,8 +191,8 @@ nav > .navbar-brand  {
     opacity: 0;
     color: #fff;
     font-size: 26px;
-    font-family: "Font Awesome 5 Brands";
-    content: "\f00e";
+    font-family: "Font Awesome 5 Free";
+    content: '\f00e';
     pointer-events: none;
     z-index: 9000;
     transition: 0.4s;
@@ -195,7 +207,7 @@ nav > .navbar-brand  {
     height: 100%;
     opacity: 0;
     background-color: rgba(53, 209, 12);
-    content: '';
+    content: '\f00e';
     transition: 0.4s;
 }
 
@@ -262,6 +274,20 @@ nav > .navbar-brand  {
     list-style: none;
     text-decoration: none;
 }
+.footer-left > ul > li:nth-child(n) > a:hover{
+    color:  #FFFF;
+}
+.footer-left > ul > li:nth-child(n) > .active a{
+    font-size: 23.496px;
+    font-family: "Montserrat";
+    color:  #FFFF;
+    text-transform: uppercase;
+    line-height: 1.826;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+}
+
 .footer p {
     font-size: 20.483px;
     font-family: "Muli";
@@ -278,26 +304,6 @@ nav > .navbar-brand  {
 .padding {
     padding : 5%;
 }
-  /* .Rectangle_209_copie {
-    background-color: rgb( 255, 255, 255 );
-    position: absolute;
-    left: 1413px;
-    top: 538px;
-    width: 2px;
-    height: 24px;
-    z-index: 25;
-  } */
-  /* .Rectangle_209 {
-    background-color: rgba( 73, 73, 73, 0.431 );
-    position: absolute;
-    left: 1413px;
-    top: 505px;
-    width: 2px;
-    height: 126px;
-    z-index: 24;
-  } */
-
-  
 
 
 
@@ -315,16 +321,16 @@ nav > .navbar-brand  {
 
 
 /*-- Firefox Bug fix --*/
-.carousel-item{
+/* .carousel-item{
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
-}
+} */
 
 /* --Fixed background Image --*/
-figure{
+/* figure{
     position: relative;
     width: 100%;
     height: 60%;
@@ -338,7 +344,7 @@ figure{
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */
 
 /* #fixed{
     background-image: url('../img/back2.jpg');

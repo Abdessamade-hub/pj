@@ -19,7 +19,7 @@
         <!-- Navigation menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <!-- Lien vers la page principale -->
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" height="60"  alt=""> Aux jardins du lays</a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png"  alt="Logo"> Aux jardins du lays</a>
 
             <!-- bouton Hambureger pour afficher le menu sur le mobile  -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +43,15 @@
                 </li>
             </ul>
                 <div class="social text-center">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-google-plus-g"></i>
+                    <span class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </span>
+                    <span class="twitter"> 
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span class="googleplus">
+                        <i class="fab fa-google-plus-g"></i>
+                    </span>
                 </div>
             </div>
         </nav>
@@ -100,27 +106,24 @@
             </div>
         </div>
 
-        <!-- <figure>
-            <div class="fixed-wrap">
-                <div id="fixed"></div>
-            </div>
-        </figure> -->
-        
+      
         <!-- Section Nos activités -->
         <div class="container-fluid activity padding">
             <div class="row text-center">
                 <div class="col-12">
                     <h2>Nos activités</h2>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 text-uppercase padding">
+                <div class="col-sm-12 col-md-6 col-lg-6 text-uppercase padding activity-body">
                     <img src="assets/img/icon1.png" alt=""><br>
-                    <p>création de jardin</p>
-                    <img src="assets/img/icon-dotts-green.png" alt="">
+                    <p class="padding avtivity-p">création de jardin</p>
+                    <div>
+                        <div class="dots-icon "></div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 text-uppercase padding">
+                <div class="col-sm-12 col-md-6 col-lg-6 text-uppercase padding activity-body">
                     <img src="assets/img/icon2.png" alt="" ><br>
-                    <p>entretien de jardin</p>
-                    <img src="assets/img/icon-dotts.png" alt="">
+                    <p class="padding avtivity-p">entretien de jardin</p>
+                    <div class="dots-icon"></div>
                 </div>
             </div>
         </div>
@@ -137,12 +140,12 @@
                             <img src="assets/img/gallery1.jpg" alt="Réalisation 1">
                         </a>
                     </div>
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <a class="lightbox" href="assets/img/gallery2.jpg">
                             <img src="assets/img/gallery2.jpg"  alt="Réalisation 2">
                         </a>
                     </div>
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <a class="lightbox" href="assets/img/gallery3.jpg">
                             <img src="assets/img/gallery3.jpg" alt="Réalisation 3">
                         </a>
@@ -188,7 +191,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4 footer-left padding">
                     <ul>
-                        <li class="text-uppercase active"><a href="#">accueil</a></li>
+                        <li class="text-uppercase "><a href="#">accueil</a></li>
                         <li class="text-uppercase"><a href="#">création de jardin</a></li>
                         <li class="text-uppercase"><a href="#">entretien de jardin</a></li>
                         <li class="text-uppercase"><a href="#">contact</a></li>
