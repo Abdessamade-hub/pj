@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/style.css"> 
     <!-- CSS font awesome -->
     <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- baguetteBox -->
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
 </head>
     <body>
       
@@ -17,7 +19,7 @@
         <!-- Navigation menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <!-- Lien vers la page principale -->
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" height="50"  alt=""> Aux jardins du lays</a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" height="60"  alt=""> Aux jardins du lays</a>
 
             <!-- bouton Hambureger pour afficher le menu sur le mobile  -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +42,7 @@
                     <a class="nav-link text-uppercase" href="#">contact</a>
                 </li>
             </ul>
-                <div class="social padding">
+                <div class="social text-center">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-google-plus-g"></i>
@@ -98,14 +100,14 @@
             </div>
         </div>
 
-        <figure>
+        <!-- <figure>
             <div class="fixed-wrap">
                 <div id="fixed"></div>
             </div>
-        </figure>
+        </figure> -->
         
         <!-- Section Nos activités -->
-        <div class="container-fluid activity">
+        <div class="container-fluid activity padding">
             <div class="row text-center">
                 <div class="col-12">
                     <h2>Nos activités</h2>
@@ -113,87 +115,89 @@
                 <div class="col-sm-12 col-md-6 col-lg-6 text-uppercase padding">
                     <img src="assets/img/icon1.png" alt=""><br>
                     <p>création de jardin</p>
-                    <p  class="icon-dotted1">...</p>
+                    <img src="assets/img/icon-dotts-green.png" alt="">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 text-uppercase">
+                <div class="col-sm-12 col-md-6 col-lg-6 text-uppercase padding">
                     <img src="assets/img/icon2.png" alt="" ><br>
                     <p>entretien de jardin</p>
-                    <p class="icon-dotted2">...</p>
+                    <img src="assets/img/icon-dotts.png" alt="">
                 </div>
             </div>
         </div>
 
-        <!-- Section nos réalisation -->
-        <div class="container-fluid padding realisation">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2>Nos denières réalisations</h2>
-                </div>  
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="thumbnail">
-                      <img src="assets/img/gallery1.jpg" alt="gellery" class="img-fluid">
-                    </div>  
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="thumbnail">
-                       <img src="assets/img/gallery2.jpg" alt="gellery" class="img-fluid">
+
+
+         <!-- Section nos réalisation -->
+        <div class="container-fluid gallery-container">
+            <h2>Nos denières réalisations</h2>
+            <div class="tz-gallery">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="assets/img/gallery1.jpg">
+                            <img src="assets/img/gallery1.jpg" alt="Réalisation 1">
+                        </a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="thumbnail">
-                       <img src="assets/img/gallery3.jpg" alt="gellery" class="img-fluid">
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="assets/img/gallery2.jpg">
+                            <img src="assets/img/gallery2.jpg"  alt="Réalisation 2">
+                        </a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="thumbnail">
-                       <img src="assets/img/gallery4.jpg" alt="gellery" class="img-fluid">
+                    <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="assets/img/gallery3.jpg">
+                            <img src="assets/img/gallery3.jpg" alt="Réalisation 3">
+                        </a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="thumbnail">
-                       <img src="assets/img/gallery5.jpg" alt="gellery" class="img-fluid">
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="assets/img/gallery4.jpg">
+                            <img src="assets/img/gallery4.jpg" alt="Réalisation 4">
+                        </a>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="thumbnail">
-                       <img src="assets/img/gallery6.jpg" alt="gellery" class="img-fluid">
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="assets/img/gallery5.jpg">
+                            <img src="assets/img/gallery5.jpg" alt="Réalisation 5">
+                        </a>
+                    </div> 
+                    <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="assets/img/gallery6.jpg">
+                            <img src="assets/img/gallery6.jpg" alt="Réalisation 6">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Section Contactez nous -->
-        <div class="container-fluid padding">
+        <div class="container-fluid padding contact">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-lg-6 ">
-                    <h5>Contactez-nous</h5>
+                    <h3>Contactez-nous</h3>
                 </div>
                 <div class="col-md-12 col-sm-12 col-lg-3">
-                    <h5 class="text-uppercase">téléphone</h5>
-                    <a href="tel:+33149100505">01 49 10 05 05</a>
+                    <h5 class="text-uppercase"><img src="assets/img/location.png" alt=""> téléphone</h5>
+                    <a href="tel:+33149100505" class="ml-4">   01 49 10 05 05</a>
                 </div>
                 <div class="col-md-12 col-sm-12 col-lg-3">
-                    <h5 class="text-uppercase">adresse</h5>
-                    <p>535 Chemin du terrain Bleu.<br>69270 Rochetaillée-sur-Saône</p>
+                    <h5 class="text-uppercase"><img src="assets/img/phone.png" alt=""> adresse</h5>
+                    <p  class="ml-4">  535 Chemin du terrain Bleu.<br>69270 Rochetaillée-sur-Saône</p>
                 </div>
             </div>
         </div>
-        <hr>
+        
         <!-- footer -->
-        <div class="container-fluid padding footer">
+        <div class="container-fluid  footer">
             <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 footer-left padding">
                     <ul>
-                        <li class="text-uppercase">accueil</li>
-                        <li class="text-uppercase">création de jardin</li>
-                        <li class="text-uppercase">entretien de jardin</li>
-                        <li class="text-uppercase">contact</li>
-                        <li class="text-uppercase">mention légales</li>
-                        <li class="text-uppercase">plan du site</li>
+                        <li class="text-uppercase active"><a href="#">accueil</a></li>
+                        <li class="text-uppercase"><a href="#">création de jardin</a></li>
+                        <li class="text-uppercase"><a href="#">entretien de jardin</a></li>
+                        <li class="text-uppercase"><a href="#">contact</a></li>
+                        <li class="text-uppercase"><a href="#">mention légales</a></li>
+                        <li class="text-uppercase"><a href="#">plan du site</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-8">
-                    <h3 class="text-uppercase">recherches fréquentes</h3>
+                <div class="col-sm-12 col-md-8 col-lg-8 padding">
+                    <h3 class="">Recherches fréquentes</h3>
                     <hr>
                     <p>Aménagement intérieur Ivry-sur-Seine - Aménagement Ivry-sur-Seine - Rénovation <br>maison Ivry-surSeine - Rénovation appartement Ivry-sur-Seine - Stores Ivry-sur-Seine - <br>Volets roulants Ivry-sur-Seine - Rénovation salle de bains Ivry-sur-Seine - Robinet Groché<br> Ivry-sur-seine - Aménagement intérieur Gentilly - Aménagement Gentilly - Rénovation<br>maison Gentilly - Rénovation appartement Gentilly - Stores Gentilly - Volets roulants</p>
                 </div>
@@ -201,7 +205,8 @@
 
         </div>
 
-        
+        <!-- baguetteBox -->
+        <script src="assets/js/baguetteBox.min.js"></script>
         <!-- JS Pérsonnalisé  -->
         <script src="assets/js/main.js"></script>
         <!-- Jquery  -->
@@ -209,7 +214,7 @@
         <!-- JS Bootstrap  -->
         <script src="assets/js/bootstrap.min.js"></script>
         <!-- JS font awesome  -->
-    <script src="assets/js/all.min.js"></script>
+        <script src="assets/js/all.min.js"></script>
     </body>
 </html>
         
